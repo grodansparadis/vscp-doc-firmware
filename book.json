@@ -1,6 +1,6 @@
 {
-    "title":"The VSCP Firmware",
-    "description":"This is the official firmare specification for the Very Simple Control Protocol.",
+    "title":"The VSCP Firmware Specification",
+    "description":"This is the official firmware specification for the Very Simple Control Protocol.",
     "author":"Ake Hedman, Grodans Paradis AB",
     "language":"en",
     "plugins" : ["anchors"]
