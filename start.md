@@ -1,8 +1,6 @@
-# VSCP Firmware
+# VSCP Firmware Specification
 
-Copyright © 2000-2018 Åke Hedman, [Grodans Paradis AB](http://www.grodansparadis.com), [akhe@grodansparadis.com](akhe@grodansparadis.com)
-
-# Abstract
+ 
 
 The VSCP firmware is code that you find in nodes. It is built to be able to fit in the smallest possible device and it is free of assumptions on which transport mechanism that is used even if currently most samples use CAN.
 
