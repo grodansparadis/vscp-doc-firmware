@@ -1,11 +1,12 @@
-# The VSCP Specification
+# The VSCP Firmware Specification
 
 ![VSCP logo](./images/logo_100.png)
 
-**Specification reversion:** 1.10.18 - 2018-03-20 
-[HISTORY](vscp_specification_history.md)
+**Specification reversion:** 1.1 - 2018-05-29 
 
-This document is the official VSCP (Very Simple Control Protocol) specification. VSCP is an IoT framework mainly built for resource limited devices.
+This document is the official VSCP (Very Simple Control Protocol) firmware specification. 
+
+VSCP is an IoT framework mainly built for resource limited devices. This document describes firmware code support that is freely available for developers of VSCP compatible hardware.
 
 Apart from going through this document You can read all about and download VSCP from [the VSCP site](https://www.vscp.org "The VSCP site"). 
 
@@ -15,13 +16,15 @@ Author 2000-2018 Åke Hedman, [Grodans Paradis AB](https://www.grodansparadis.co
 
 This document is licensed under [Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/) and can be freely copied, redistributed, remixed, transformed, built upon as long as you give credits to the author.
 
-Many people has helped to create and evolve this protocol: *Behzad Ardakani, Marcus Rejås, Charles Tewiah, Mark Marooth, Gediminas Simanskis, Henk Hofstra, Stefan Langer, Kurt Herremans, Jiri Kubias, Frank Sautter, Dinesh Guleria, David Steeman, Andreas Merkle, Arpad Toth, Anders Forsgren, Stuart O'Reilly* are valued contributors. 
-
 If you use VSCP please consider contributing resources or time to the project ([http://vscp.org/support.php](http://vscp.org/support.php)). 
 
 # Abstract
 
-Collected in a package described as **VSCP & friends** a complete solution framework for measurement and control, also popular known as m2m (machine to machine) and IoT (Internet of Things), is described in this paper. VSCP (Very Simple Control Protocol) defines the protocol and the framework, “Friends” is the many software tools, examples and api's the are freely available. The protocol was placed in the public domain in year 2000 when the project first was started and is therefore free to use and implement for everyone commercially or otherwise. VSCP solves the uniform discovery and uniform configurations problems for small devices. It also uses a very well specified event format and supports global unique identifiers for nodes making a node identifiable wherever it is installed in the world. It has a register model to give a flexible common interface to node configuration and a model for controlling node functionality. VSCP does not assume anything about the lower level system. It works with different transport mechanism such as Ethernet, TCP/IP, Wireless, Zigbee, Bluetooth, CAN, GPRS, RS-232, USB. Every control and measurement situation can be described and implemented using VSCP. 
+The VSCP firmware is code that you find in harware nodes. It is built to be able to fit in the smallest possible device and it is free of assumptions on which transport mechanism that is used even if currently most samples use CAN-BUS.
+
+It is not a big deal to make a node that follow the the VSCP standard. You should however be aware of what [registers](https://grodansparadis.gitbooks.io/the-vscp-specification/content/vscp_register_abstraction_model.html) are, what [events](https://grodansparadis.gitbooks.io/the-vscp-specification/content/introduction.html) are, what a [Module Description file (MDF)](https://grodansparadis.gitbooks.io/the-vscp-specification/content/vscp_module_description_file.html) is, what a [decision matrix (DM)](https://grodansparadis.gitbooks.io/the-vscp-specification/content/vscp_decision_matrix.html) is and what a [GUID](https://grodansparadis.gitbooks.io/the-vscp-specification/content/vscp_globally_unique_identifiers.html) is before you start. You find all that information in the VSCP Specification.
+
+If you are making modules for sale or delivery outside your own lab bench you should probably ask for a GUID series for your device. Send a mail to [guid-request@vscp.org](guid-request@vscp.org) providing your contact information and ask for a series. You get a series free of charge.
 
 
  
