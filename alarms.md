@@ -8,6 +8,4 @@ If you want to make sure that the an alarm is acknowledged by receiving end add 
 
 Just return zero when users read this register and your device have no alarms defined.
 
-\\ 
-----
-Copyright (c) 2000-2015 [Åke Hedman](mailto/akhe@grodansparadis.com), [Paradise of the Frog / Grodans Paradis AB](http://www.grodansparadis.com)
+{% include "./bottom_copyright.md" %}

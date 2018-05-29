@@ -417,13 +417,4 @@ Should be implemented only if **DROP_NICKNAME_EXTENDED_FEATURES** is defined.
 
 Wait in a loop for sec seconds.
 
-----
-
-
-
-
-\\ 
-----
-{{  ::copyright.png?600  |}}
-
-`<HTML>``<p style="color:red;text-align:center;">``<a href="http://www.grodansparadis.com">`Grodans Paradis AB`</a>``</p>``</HTML>`
+{% include "./bottom_copyright.md" %}

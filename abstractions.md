@@ -45,8 +45,4 @@ The abstractions for our two temperature values will look like this
 After this has been done an end user accessing your device will instead of a high and a low 8-bit value for the temperature see and work with a signed 16-bit integers. In VSCP Works you can see and handle the abstractions in the abstraction tab of the configuration window. In a setup wizard you can handle settings even easier than that.
 
 
-\\ 
-----
-{{  ::copyright.png?600  |}}
-
-`<HTML>``<p style="color:red;text-align:center;">``<a href="http://www.grodansparadis.com">`Grodans Paradis AB`</a>``</p>``</HTML>`
+{% include "./bottom_copyright.md" %}

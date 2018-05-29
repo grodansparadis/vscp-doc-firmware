@@ -340,8 +340,4 @@ You can now load this file in VSCP works configuration view or if you have set i
 Bad thing here is that the temperature values are separated into two  registers. [Abstractions](Abstractions) is the answer but before you attend to them you probably should add all the required [callbacks](callbacks) to your code.
 
 
-\\ 
-----
-{{  ::copyright.png?600  |}}
-
-`<HTML>``<p style="color:red;text-align:center;">``<a href="http://www.grodansparadis.com">`Grodans Paradis AB`</a>``</p>``</HTML>`
+{% include "./bottom_copyright.md" %}

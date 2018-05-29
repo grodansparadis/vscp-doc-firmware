@@ -25,8 +25,4 @@ After this the **vscp_init** method is called which is the main VSCP initializat
 Note that there can be other causes to restore default values. Some want to check a checksum over persistent storage and so on. But this is typically what is needed as a minimum.
 
 
-\\ 
-----
-{{  ::copyright.png?600  |}}
-
-`<HTML>``<p style="color:red;text-align:center;">``<a href="http://www.grodansparadis.com">`Grodans Paradis AB`</a>``</p>``</HTML>`
+{% include "./bottom_copyright.md" %}

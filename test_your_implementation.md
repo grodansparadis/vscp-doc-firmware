@@ -11,13 +11,4 @@ When you have coded your system you probably want to make sure that it works pro
  7.  Test your devices functionality.
 
 
-----
-
-
-
-
-\\ 
-----
-{{  ::copyright.png?600  |}}
-
-`<HTML>``<p style="color:red;text-align:center;">``<a href="http://www.grodansparadis.com">`Grodans Paradis AB`</a>``</p>``</HTML>`
+{% include "./bottom_copyright.md" %}

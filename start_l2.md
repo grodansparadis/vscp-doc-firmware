@@ -99,6 +99,9 @@ Can be used to read and write decision matrix rows.
 #### Subcommands
 
 
+{% include "./bottom_copyright.md" %}
+
+
 
 
 
