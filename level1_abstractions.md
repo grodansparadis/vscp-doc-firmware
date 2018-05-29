@@ -8,8 +8,7 @@ If you just have eight bit values or less you don't need abstractions. Just don'
 
 The abstractions for our two temperature values will look like this
 
-`<code=xml>`
-
+```xml
 `<abstractions>`
 
     // Abstraction for temperature value 1
@@ -40,7 +39,7 @@ The abstractions for our two temperature values will look like this
     
 `</abstractions>`    
 
-`</code>`
+```
 
 After this has been done an end user accessing your device will instead of a high and a low 8-bit value for the temperature see and work with a signed 16-bit integers. In VSCP Works you can see and handle the abstractions in the abstraction tab of the configuration window. In a setup wizard you can handle settings even easier than that.
 

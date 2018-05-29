@@ -1,12 +1,12 @@
 # A millisecond clock
 
-The firmware code rely on a millisecond clock. First add this to your code and make sure that it works. In the Paris reference design you find this code in the [interrupt routine around line 133](https://github.com/grodansparadis/can4vscp_paris/blob/master/main.c). It looks like this 
+The VSCPP firmware code rely on a millisecond clock. Therefore your first task is to add this to your code and make sure that it works. In the Paris reference design you find this code in the [interrupt routine around line 133](https://github.com/grodansparadis/can4vscp_paris/blob/master/main.c). It looks like this 
 
 ```cpp
 // Clock
 if ( INTCONbits.TMR0IF ) { // If a Timer0 Interrupt then...
   // Reload value for 1 ms reolution
-  WriteTimer0(TIMER0_RELOAD_VALUE);
+  WriteTimer0( TIMER0_RELOAD_VALUE );
   vscp_timer++;
   vscp_configtimer++;
   measurement_clock++;

@@ -2,9 +2,9 @@
 
 When a node is started up the first time it should get a nickname, that is act like the init. button has been pressed.
 
-On the Paris node reference project this code looks like this
+On the [Paris node reference project](http://www.grodansparadis.com/paris/manual/doku.php?id=start) this code looks like this
 
-`<code=c>`
+```cpp
 init(); // Initialize Micro controller
 
 // Check VSCP persistent storage and
@@ -16,7 +16,7 @@ if ( !vscp_check_pstorage() ) {
                     // are initialized from EEPROM
 }
 vscp_init(); // Initialize the VSCP functionality
-`</code>`
+```
 
 Here the system is initialized in the **init()** method and then the **vscp_check_pstorage()** method is called which checks if initialization of the VSCP system is needed or not.  FALSE is returned if initialization is needed and then default values are written to persistent storage and also to ram in this case as some values for this node is fetched from EEPROM.
 

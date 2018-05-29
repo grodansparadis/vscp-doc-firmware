@@ -1,8 +1,8 @@
 # The Main loop
 
-The VSCP related main loop for the Paris reference node look like this
+The VSCP related main loop for the [Paris reference node](http://www.grodansparadis.com/paris/manual/doku.php?id=start) look like this
 
-`<code=c>`
+```cpp
 while ( 1 ) {   // Loop Forever
 
    ClrWdt();   // Feed the dog
@@ -81,15 +81,15 @@ while ( 1 ) {   // Loop Forever
     do other things here
     ...
 }
-`</code>`
+```
 
 We recognize the button function we looked at before. An it is followed by
 
-`<code=c>`
+```cpp
 // Check for a valid  event
 vscp_imsg.flags = 0;
 vscp_getEvent();
-`</code>`
+```
 
 which fetch one VSCP event. This event is placed in the vscp_imsg structure if one is available and then the flag **VSCP_VALID_MSG** s set in vscp_imsg.flags.
 

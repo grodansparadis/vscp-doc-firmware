@@ -7,25 +7,25 @@
 
 ## Level I nodes
 
-* [Level I](level_i_specifics.md)
-* [Intro](introduction.md)
-* [A millisecond clock](a_millisecond_clock.md)
-* [The init button](the_init_button.md)
-* [The status LED](the_status_led.md)
-* [Node startup](node_startup.md)
-* [The main loop](the_main_loop.md)
-* [CAN or not CAN](can_or_not_can.md)
-* [Registers and the MDF](registers_and_the_mdf.md)
-* [Abstractions](abstractions.md)
-* [Callbacks](callbacks.md)		
-* [The decision matrix](the_decision_matrix.md)
-* [Alarms](alarms.md)
-* [Test your implementation](test_your_implementation.md)
-* [Example code](example_devices.md)
+* [Level I](level1_specifics.md)
+* [Intro](level1_introduction.md)
+* [A millisecond clock](level1_a_millisecond_clock.md)
+* [The init button](level1_the_init_button.md)
+* [The status LED](level1_the_status_led.md)
+* [Node startup](level1_node_startup.md)
+* [The main loop](level1_the_main_loop.md)
+* [CAN or not CAN](level1_can_or_not_can.md)
+* [Registers and the MDF](level1_registers_and_the_mdf.md)
+* [Abstractions](level1_abstractions.md)
+* [Callbacks](./level1_callbacks.md)		
+* [The decision matrix](level1_decision_matrix.md)
+* [Alarms](level1_alarms.md)
+* [Test your implementation](level1_test_your_implementation.md)
+* [Real world examples](level1_example_devices.md)
 
 ## Level II nodes
-* [Start](start_l2.md)
-* [Introduction](introduction_l2.md)
+* [Start](level2_start.md)
+* [Introduction](level2_introduction.md)
 
 ## Appendix
 

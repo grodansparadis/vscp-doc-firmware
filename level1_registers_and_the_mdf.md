@@ -1,8 +1,8 @@
 # Registers and the MDF
 
-The register abstraction model is fully described [here](http://www.vscp.org/docs/vscpspec/doku.php?id=register_abstraction_model).
+The register abstraction model is fully described [here](https://grodansparadis.gitbooks.io/the-vscp-specification/content/vscp_register_abstraction_model.html).
 
-Before implementing all the [callbacks](callbacks) that lay out the functionality of your module you should start to think of what registers to implement, where they should be, there values etc. 
+Before implementing all the [callbacks](./level1_callbacks.md) that lay out the functionality of your module you should start to think of what registers to implement, where they should be, there values etc. 
 
 The standard register set is defined by callbacks so you don't have to worry about them at this stage. Just the application registers are of interest here.
 
@@ -25,7 +25,7 @@ And again it's important to note that the actual registers of the device does no
 
 In the firmware code the **vscp_readAppReg** [callback](callbacks) will looks something like this
 
-`<code=c>`
+```cpp
 uint8_t vscp_readAppReg(uint8_t reg)
 {    
     uint8_t rv;
@@ -66,11 +66,11 @@ uint8_t vscp_readAppReg(uint8_t reg)
     
     return rv;
 }
-`</code>`
+```
 
 and the **vscp_writeAppReg** [callback](callbacks) code will look something like this
 
-`<code=c>`
+```cpp
 uint8_t vscp_writeAppReg( uint8_t reg, uint8_t val )
 {
     uint8_t rv;
@@ -96,7 +96,7 @@ uint8_t vscp_writeAppReg( uint8_t reg, uint8_t val )
         // do write page 1 stuff here
     }
 }
-`</code>`
+```
 
 Note that there is no need to do write routines for the temperature values. They are read only. So we just leav them out.
 
@@ -105,46 +105,47 @@ So now we can read and write registers of our new device. But if the world does 
 
 In the MDF registers are defined between the
 
-`<code=xml>`
+```xml
 `<registers>`
     ...registers goes here...
 `</register>`
-`</code>`
+```
 
 and each register is defined as
 
-`<code=xml>`
+```xml
 `<register>`
     ...a register definition goes here...
 `</register>`
-`</code>`
+```
+
 
 The full format is
 
-`<code=xml>`
+```xml
 `<reg page="0" offset="15" default="0" >`         
     `<name lang="en">`alsoaname_msb`</name>`         
     `<description lang="en">`MSB of alsoaname`</description>`         
     `<help type="text/url"  lang="en">`what help is this`</help>`         
     `<access>`rw`</access>`     
 `</reg>`  
-`</code>`
+```
 
 with the following meaning for attributes and properties
 
- | Attributes/Properties | Description                                                                                                                                                                                                          | 
- | --------------------- | -----------                                                                                                                                                                                                          | 
- | **page**              | The page the register is located on. (0-65535)                                                                                                                                                                       | 
- | **offset**            | The offset on the page for the  register (0-127)                                                                                                                                                                     | 
- | **default**           | The default value for the register.                                                                                                                                                                                  | 
+ | Attributes/Properties | Description | 
+ | --------------------- | -----------  | 
+ | **page**              | The page the register is located on. (0-65535) | 
+ | **offset**            | The offset on the page for the  register (0-127) | 
+ | **default**           | The default value for the register. | 
  | **name**              | The name for the register. Choose something descriptive. Note the language attribute. You can have different names for different languages. Languages are defined using ISO country codes.                           | 
  | **description**       | Describe here what the register is used for. Note the language attribute. You can have different descriptions for different languages. Use "\n" for new lines.                                                       | 
  | **help**              | Point to a web page that contains help for this register. Note the language attribute. You can have different help pointers for different languages. Remember also so set a text that describe what the help is for. | 
- | **access**            | Tells if the register can be read "r" or written "w" or both "rw"                                                                                                                                                    | 
-
+ | **access**            | Tells if the register can be read "r" or written "w" or both "rw"                                                                            
+ 
 So for the registers we defined above we get something like this
 
-`<code=xml>`
+```xml
 `<registers>`
 
     `<!-- MSB temperature sensor 1 -->`
@@ -226,11 +227,11 @@ So for the registers we defined above we get something like this
     `</reg>`
             
 `</registers>`
-`</code>`
+```
 
 So that's it. You're registers are defined and presented to the world. The MDF need some more info to be complete. Here is a dummy MDF you an start out with. Just add your registers and your own information to it.
 
-`<code=xml>`
+```xml
 `<?xml version = "1.0" encoding = "UTF-8" ?>`
 `<vscp>`
     `<module>`
@@ -333,7 +334,7 @@ So that's it. You're registers are defined and presented to the world. The MDF n
     `</module>`	
     
 `</vscp>`	
-`</code>`
+```
 
 You can now load this file in VSCP works configuration view or if you have set it in the MDF url of the device and uploaded it to a server somewhere it will be read in automatically.
 

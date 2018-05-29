@@ -18,7 +18,7 @@ If you look at the code you see the comment just before the switch OK "Trigger t
 
 The action routines is just methods like any other methods in your code.
 
-`<code=c>`
+```cpp
 void doDM(void)
 {
     unsigned char i;
@@ -108,7 +108,7 @@ void doDM(void)
         } // Row enabled
     } // for each row
 }
-`</code>`
+```
 
 
 {% include "./bottom_copyright.md" %}

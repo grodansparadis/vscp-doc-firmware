@@ -2,9 +2,9 @@
 
 The status LED should blink on a node when it is looking for a nickname and then light steady when it is done.
 
-For the Paris node reference project this is all handled in the interrupt routine
+For the [Paris node reference project](http://www.grodansparadis.com/paris/manual/doku.php?id=start) this is all handled in the interrupt routine
 
-`<code=c>`
+```cpp
 // Status LED
 vscp_statuscnt++;
 if ( ( VSCP_LED_BLINK1 == vscp_initledfunc ) &&
@@ -25,7 +25,7 @@ else if (VSCP_LED_OFF == vscp_initledfunc) {
     STATUS_LED = 0;
     vscp_statuscnt = 0;
 }
-`</code>`
+```
 
 This code should not be hard to follow. 
 

@@ -10,6 +10,14 @@ A Level II device usually use the full 16-byte GUID of the node to identify itse
 
 Most events in VSCP is not addressed but have an origin.
 
+## Init. button.
+A Level I node should have an init. button that when hold for a few seconds init. the device. Normally this means that a nickname discovery is performed, meaning the nod eis getting a nickname to use instead of its full GUID. 
+
+The same button can be used for a factory default setting operation if hold for a longer time.
+
+## Status LED
+A level I device should have a LED which is blinking when the node is initializing, doing nickname discover and which lights steady when the node is in it's active state.
+
 ## Registers
 VSCP requires some registers to be presented in each node. This is registers with special meaing such as the GUID, discussed above, the MDF (Module Description File) url, alarmflags and quite a few others. You can read more about VSCP regsisters in the spceification [here](https://grodansparadis.gitbooks.io/the-vscp-specification/content/vscp_register_abstraction_model.html).
 
