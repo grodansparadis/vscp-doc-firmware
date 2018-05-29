@@ -40,5 +40,11 @@ If you have the resources to handle [Level II events](https://grodansparadis.git
 
 If you don't have the resources to handel Level II events in your hardware go for Level I. Let a VSCP daemon or gateway do the translation to full VSCP level II events for you. 
 
+## Firmware
+
+Firmware for Level I nodes is available in the [vscp-firmware repository](https://github.com/grodansparadis/vscp-firmware). **vscp_firmware.h** and **vscp_firmware.c** in the top common folder is the file you are looking for.Read the rest of this sections oon how to implement this code into your hardware device.  
+
+As an alternative to the code described here you can use the [vscp-framework](https://github.com/BlueAndi/vscp-framework) to implement a Level I device. 
+
 
 {% include "./bottom_copyright.md" %}
