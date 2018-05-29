@@ -1,14 +1,11 @@
 # VSCP Level II Firmware
 
-Copyright © 2000-2018 Åke Hedman, [Grodans Paradis AB](http://www.grodansparadis.com), [akhe@grodansparadis.com](akhe@grodansparadis.com)
-
-# Abstract
 
 The VSCP firmware is code that you find in nodes. It is built to be able to fit in the smallest possible device and it is free of assumptions on which transport mechanism that is used.
 
-Anyway it is not a big deal to make a node that follow the the VSCP standard. You should however be aware of what [registers](http://www.vscp.org/docs/vscpspec/doku.php?id=register_abstraction_model) are, what [events](http://www.vscp.org/docs/vscpspec/doku.php?id=level_i_events) are, what a [MDF](http://www.vscp.org/docs/vscpspec/doku.php?id=module_description_file) is, what a [decision matrix (DM)](http://www.vscp.org/docs/vscpspec/doku.php?id=decision_matrix) is and what a [GUID](http://www.vscp.org/docs/vscpspec/doku.php?id=globally_unique_identifiers) is before you start. You find all that information in the [VSCP Specification](http://www.vscp.org/docs/vscpspec/doku.php).
+Anyway it is not a big deal to make a node that follow the the VSCP standard. You should however be aware of what [registers](https://grodansparadis.gitbooks.io/the-vscp-specification?id=register_abstraction_model) are, what [events](https://grodansparadis.gitbooks.io/the-vscp-specification?id=level_i_events) are, what a [MDF](https://grodansparadis.gitbooks.io/the-vscp-specification?id=module_description_file) is, what a [decision matrix (DM)](https://grodansparadis.gitbooks.io/the-vscp-specification?id=decision_matrix) is and what a [GUID](https://grodansparadis.gitbooks.io/the-vscp-specification?id=globally_unique_identifiers) is before you start. You find all that information in the [VSCP Specification](https://grodansparadis.gitbooks.io/the-vscp-specification).
 
-If you are making modules for sale or delivery outside your own lab bench you should probably ask for a GUID series for your device. Send a mail to [guid@vscp.org](guid@vscp.org) providing your contact information and ask for a series. You get a series free of charge.
+If you are making modules for sale or delivery outside your own lab bench you should probably ask for a GUID series for your device. Send a mail to [guid-request@vscp.org](mailto:guid-request@vscp.org) providing your contact information and ask for a series. You get a series free of charge.
 
 ##  Before you go
 

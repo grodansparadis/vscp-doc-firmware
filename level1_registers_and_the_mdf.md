@@ -23,7 +23,7 @@ We also add two registers that tell how many seconds it should be between temper
 
 And again it's important to note that the actual registers of the device does not have to be located as we describe them to the world (in the MDF). We can present them in any way we like. 
 
-In the firmware code the **vscp_readAppReg** [callback](callbacks) will looks something like this
+In the firmware code the **vscp_readAppReg** [callback](./level1_callbacks.md#vscp_readAppReg) will looks something like this
 
 ```cpp
 uint8_t vscp_readAppReg(uint8_t reg)
@@ -68,7 +68,7 @@ uint8_t vscp_readAppReg(uint8_t reg)
 }
 ```
 
-and the **vscp_writeAppReg** [callback](callbacks) code will look something like this
+and the **vscp_writeAppReg** [callback](level1_callbacks.md#vscp_writeAppReg) code will look something like this
 
 ```cpp
 uint8_t vscp_writeAppReg( uint8_t reg, uint8_t val )
@@ -100,7 +100,7 @@ uint8_t vscp_writeAppReg( uint8_t reg, uint8_t val )
 
 Note that there is no need to do write routines for the temperature values. They are read only. So we just leav them out.
 
-So now we can read and write registers of our new device. But if the world does not know what to expect from each register, what can be read/written from/to it, our work so far have no use for anyone. The task of the [MDF (Module Description File)](http://www.vscp.org/docs/vscpspec/doku.php?id=module_description_file) is to define this. 
+So now we can read and write registers of our new device. But if the world does not know what to expect from each register, what can be read/written from/to it, our work so far have no use for anyone. The task of the [MDF (Module Description File)](https://grodansparadis.gitbooks.io/the-vscp-specification/content/vscp_module_description_file.html) is to define this. 
 
 
 In the MDF registers are defined between the
@@ -338,7 +338,7 @@ So that's it. You're registers are defined and presented to the world. The MDF n
 
 You can now load this file in VSCP works configuration view or if you have set it in the MDF url of the device and uploaded it to a server somewhere it will be read in automatically.
 
-Bad thing here is that the temperature values are separated into two  registers. [Abstractions](Abstractions) is the answer but before you attend to them you probably should add all the required [callbacks](callbacks) to your code.
+Bad thing here is that the temperature values are separated into two  registers. [Abstractions](level1_abstractions.md) is the answer but before you attend to them you probably should add all the required [callbacks](level1_callbacks.md) to your code.
 
 
 {% include "./bottom_copyright.md" %}
