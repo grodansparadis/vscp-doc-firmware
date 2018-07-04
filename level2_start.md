@@ -19,7 +19,7 @@ This is a model that works much the same as for Level I firmware. The firmware r
 
 ## VCSP Link interface based nodes (TCP/IP)
 
-The VSCP Link interface is a telnet interface which is a subset of the [VSCP daemon tcp/ip interface](http://www.vscp.org/docs/vscpd/doku.php?id=vscp_daemon_tcp_ip_protocol_description). It always handles the following commands
+The VSCP Link interface is a telnet interface which is a subset of the [VSCP daemon tcp/ip interface](https://grodansparadis.gitbooks.io/the-vscp-daemon/tcp_ip_protocol_description.html#noop). It always handles the following commands
 
  | Command            | Description                                              | 
  | -------            | -----------                                              | 

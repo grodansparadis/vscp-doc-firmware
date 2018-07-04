@@ -5,39 +5,38 @@
 - [Callbacks](#callbacks)
     - [getVSCPFrame](#getvscpframe)
     - [sendVSCPFrame=====](#sendvscpframe)
-    - [vscp_getMajorVersion](#vscp_getmajorversion)
-    - [vscp_getMinorVersion](#vscp_getminorversion)
-    - [vscp_getSubMinorVersion](#vscp_getsubminorversion)
-    - [vscp_getGUID](#vscp_getguid)
-    - [vscp_setGUID](#vscp_setguid)
-    - [vscp_getUserID](#vscp_getuserid)
-    - [vscp_setUserID](#vscp_setuserid)
-    - [vscp_getManufacturerId](#vscp_getmanufacturerid)
-    - [vscp_setManufacturerId](#vscp_setmanufacturerid)
-    - [vscp_getBootLoaderAlgorithm](#vscp_getbootloaderalgorithm)
-    - [vscp_getBufferSize](#vscp_getbuffersize)
+    - [vscp_getMajorVersion](#vscpgetmajorversion)
+    - [vscp_getMinorVersion](#vscpgetminorversion)
+    - [vscp_getSubMinorVersion](#vscpgetsubminorversion)
+    - [vscp_getGUID](#vscpgetguid)
+    - [vscp_setGUID](#vscpsetguid)
+    - [vscp_getUserID](#vscpgetuserid)
+    - [vscp_setUserID](#vscpsetuserid)
+    - [vscp_getManufacturerId](#vscpgetmanufacturerid)
+    - [vscp_setManufacturerId](#vscpsetmanufacturerid)
+    - [vscp_getBootLoaderAlgorithm](#vscpgetbootloaderalgorithm)
     - [getRegisterPagesUsed](#getregisterpagesused)
-    - [vscp_getMDF_URL](#vscp_getmdf_url)
-    - [vscp_readNicknamePermanent](#vscp_readnicknamepermanent)
-    - [vscp_writeNicknamePermanent](#vscp_writenicknamepermanent)
-    - [vscp_init_pstorage](#vscp_init_pstorage)
-    - [vscp_getControlByte](#vscp_getcontrolbyte)
-    - [vscp_setControlByte](#vscp_setcontrolbyte)
-    - [vscp_getPageSelect](#vscp_getpageselect)
-    - [vscp_setPageSelect](#vscp_setpageselect)
-    - [vscp_readAppReg](#vscp_readappreg)
-    - [vscp_writeAppReg](#vscp_writeappreg)
-    - [vscp_getMatrixInfo](#vscp_getmatrixinfo)
-    - [vscp_getEmbeddedMdfInfo](#vscp_getembeddedmdfinfo)
-    - [vscp_goBootloaderMode](#vscp_gobootloadermode)
-    - [vscp_getZone](#vscp_getzone)
-    - [vscp_getSubzone](#vscp_getsubzone)
-    - [vscp_getFamilyCode](#vscp_getfamilycode)
-    - [vscp_getFamilyType](#vscp_getfamilytype)
-    - [vscp_restoreDefaults](#vscp_restoredefaults)
-    - [vscp_hardreset](#vscp_hardreset)
-    - [vscp_wait_ms](#vscp_wait_ms)
-    - [vscp_wait_s](#vscp_wait_s)
+    - [vscp_getMDF_URL](#vscpgetmdfurl)
+    - [vscp_readNicknamePermanent](#vscpreadnicknamepermanent)
+    - [vscp_writeNicknamePermanent](#vscpwritenicknamepermanent)
+    - [vscp_init_pstorage](#vscpinitpstorage)
+    - [vscp_getControlByte](#vscpgetcontrolbyte)
+    - [vscp_setControlByte](#vscpsetcontrolbyte)
+    - [vscp_getPageSelect](#vscpgetpageselect)
+    - [vscp_setPageSelect](#vscpsetpageselect)
+    - [vscp_readAppReg](#vscpreadappreg)
+    - [vscp_writeAppReg](#vscpwriteappreg)
+    - [vscp_getMatrixInfo](#vscpgetmatrixinfo)
+    - [vscp_getEmbeddedMdfInfo](#vscpgetembeddedmdfinfo)
+    - [vscp_goBootloaderMode](#vscpgobootloadermode)
+    - [vscp_getZone](#vscpgetzone)
+    - [vscp_getSubzone](#vscpgetsubzone)
+    - [vscp_getFamilyCode](#vscpgetfamilycode)
+    - [vscp_getFamilyType](#vscpgetfamilytype)
+    - [vscp_restoreDefaults](#vscprestoredefaults)
+    - [vscp_hardreset](#vscphardreset)
+    - [vscp_wait_ms](#vscpwaitms)
+    - [vscp_wait_s](#vscpwaits)
 
 <!-- /TOC -->
 
@@ -331,7 +330,7 @@ This callback request an application register. What you do here is entirely up t
 
 If a register that is not defined by your node is requested increase **vscp_errorcnt** and return garbage or zero.
 
-Registers are defined in the [MDF](https://grodansparadis.gitbooks.io/the-vscp-specification/content/vscp_module_description_file.html) of your node.
+Registers are defined in the [MDF](https://grodansparadis.gitbooks.io/the-vscp-specification/vscp_module_description_file.html) of your node.
 
 ##  vscp_writeAppReg
 
@@ -343,7 +342,7 @@ This callback writes a value to an application register. What you do here is ent
 
 If a register that is not defined by your node is requested increase **vscp_errorcnt** and return garbage or the complement of the value that is supposed to be written.
 
-Registers are defined in the [MDF](https://grodansparadis.gitbooks.io/the-vscp-specification/content/vscp_module_description_file.html) of your node.
+Registers are defined in the [MDF](https://grodansparadis.gitbooks.io/the-vscp-specification/vscp_module_description_file.html) of your node.
 
 Note that the written value should be returned. So if you write a value to EEPROM or something read it also after the write.
 
@@ -370,7 +369,7 @@ If your node have a decision matrix implemented return a structure consisting of
 void vscp_getEmbeddedMdfInfo(void);
 ```
 
-Get embedded MDF info. If an embedded mdf is available in the device this routine sends an embedded MDF file in several events. See [specification CLASS1.PROTOCOL Type=35/36](https://grodansparadis.gitbooks.io/the-vscp-specification/content/class1.protocol.html#type35-0x23-get-embedded-mdf)
+Get embedded MDF info. If an embedded mdf is available in the device this routine sends an embedded MDF file in several events. See [specification CLASS1.PROTOCOL Type=35/36](https://grodansparadis.gitbooks.io/the-vscp-specification/class1.protocol.html#type35)
 
 Note that if sending the events back to back some devices will not be able to cope with the data stream. It is therefor advisable to have a short delay between each mdf data frame sent out.
 

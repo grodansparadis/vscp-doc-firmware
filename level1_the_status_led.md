@@ -2,7 +2,7 @@
 
 The status LED should blink on a node when it is looking for a nickname and then light steady when it is done.
 
-For the [Paris node reference project](http://www.grodansparadis.com/paris/manual/doku.php?id=start) this is all handled in the interrupt routine
+For the [Paris node reference project](https://www.grodansparadis.com/paris/manual/doku.php?id=start) this is all handled in the interrupt routine
 
 ```cpp
 // Status LED

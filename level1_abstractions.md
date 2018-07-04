@@ -1,6 +1,6 @@
 # Abstractions
 
-Abstractions are described [here](https://grodansparadis.gitbooks.io/the-vscp-specification/content/vscp_module_description_file.html#).
+Abstractions are described [here](https://grodansparadis.gitbooks.io/the-vscp-specification/vscp_module_description_file.html#).
 
 As we saw when the registers where set a 16-bit register needs two consecutive registers to be stored in register space. This is workable for a machine to handle but humans should not have to cope with things like that. The solution to this problem is **abstractions**
 

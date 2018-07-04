@@ -11,9 +11,9 @@ If you are making modules for sale or delivery outside your own lab bench you sh
 
 ##  Before you go
 
-You have to chose what type of [transport layer/low level protocol](https://grodansparadis.gitbooks.io/the-vscp-specification/content/physical_level_lower_level_protocols.html) you want to implement in your node. Basically there is currently two types. Packet based or command based. You can also skip implemention of a client interface all together and instead actively connect with your node itself to a VSCP daemon/server instead of waiting for connection. The later with the drawback that it depes on a central server.
+You have to chose what type of [transport layer/low level protocol](https://grodansparadis.gitbooks.io/the-vscp-specification/physical_level_lower_level_protocols.html) you want to implement in your node. Basically there is currently two types. Packet based or command based. You can also skip implemention of a client interface all together and instead actively connect with your node itself to a VSCP daemon/server instead of waiting for connection. The later with the drawback that it depes on a central server.
 
-Normally you should implement all the required parts of VSCP but if you are on very constraint hardware and still want Level II you also have the option to implement a [dumb node](https://grodansparadis.gitbooks.io/the-vscp-specification/content/vscp_dumb.html). A dumb node only hasveto implement an event sender and send a node heartbeat.
+Normally you should implement all the required parts of VSCP but if you are on very constraint hardware and still want Level II you also have the option to implement a [dumb node](https://grodansparadis.gitbooks.io/the-vscp-specification/vscp_dumb.html). A dumb node only hasveto implement an event sender and send a node heartbeat.
 
 ## Packet based nodes (Ethernet/UDP/Multicast)
 

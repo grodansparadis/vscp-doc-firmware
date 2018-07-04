@@ -1,6 +1,6 @@
 # Registers and the MDF
 
-The register abstraction model is fully described [here](https://grodansparadis.gitbooks.io/the-vscp-specification/content/vscp_register_abstraction_model.html).
+The register abstraction model is fully described [here](https://grodansparadis.gitbooks.io/the-vscp-specification/vscp_register_abstraction_model.html).
 
 Before implementing all the [callbacks](./level1_callbacks.md) that lay out the functionality of your module you should start to think of what registers to implement, where they should be, there values etc. 
 
@@ -100,7 +100,7 @@ uint8_t vscp_writeAppReg( uint8_t reg, uint8_t val )
 
 Note that there is no need to do write routines for the temperature values. They are read only. So we just leav them out.
 
-So now we can read and write registers of our new device. But if the world does not know what to expect from each register, what can be read/written from/to it, our work so far have no use for anyone. The task of the [MDF (Module Description File)](https://grodansparadis.gitbooks.io/the-vscp-specification/content/vscp_module_description_file.html) is to define this. 
+So now we can read and write registers of our new device. But if the world does not know what to expect from each register, what can be read/written from/to it, our work so far have no use for anyone. The task of the [MDF (Module Description File)](https://grodansparadis.gitbooks.io/the-vscp-specification/vscp_module_description_file.html) is to define this. 
 
 
 In the MDF registers are defined between the

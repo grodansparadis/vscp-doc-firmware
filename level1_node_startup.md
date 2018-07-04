@@ -2,7 +2,7 @@
 
 When a node is started up the first time it should get a nickname, that is act like the init. button has been pressed.
 
-On the [Paris node reference project](http://www.grodansparadis.com/paris/manual/doku.php?id=start) this code looks like this
+On the [Paris node reference project](https://www.grodansparadis.com/paris/manual/doku.php?id=start) this code looks like this
 
 ```cpp
 init(); // Initialize Micro controller

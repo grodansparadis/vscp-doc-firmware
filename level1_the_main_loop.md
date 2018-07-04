@@ -1,6 +1,6 @@
 # The Main loop
 
-The VSCP related main loop for the [Paris reference node](http://www.grodansparadis.com/paris/manual/doku.php?id=start) look like this
+The VSCP related main loop for the [Paris reference node](https://www.grodansparadis.com/paris/manual/doku.php?id=start) look like this
 
 ```cpp
 while ( 1 ) {   // Loop Forever
