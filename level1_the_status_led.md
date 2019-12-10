@@ -29,5 +29,5 @@ else if (VSCP_LED_OFF == vscp_initledfunc) {
 
 This code should not be hard to follow. 
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')
 

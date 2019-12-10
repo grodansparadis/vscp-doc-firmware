@@ -1,6 +1,6 @@
 # The decision matrix
 
-Do you need a [decision matrix](https://grodansparadis.gitbooks.io/the-vscp-specification/vscp_decision_matrix.html) for for your new device? As always you are the only one who knows. If your device should react in some way on incoming event on the bus the answer is usually yes. The decision matrix gives your users flexibility. Yes you can hard code whats happen if events come into your device. That can work well for you. As said above it's your decision. We recommend that you implement one in your device.
+Do you need a [decision matrix](http://docs.vscp.org/spec/latest/#/./vscp_decision_matrix) for for your new device? As always you are the only one who knows. If your device should react in some way on incoming event on the bus the answer is usually yes. The decision matrix gives your users flexibility. Yes you can hard code whats happen if events come into your device. That can work well for you. As said above it's your decision. We recommend that you implement one in your device.
 
 Your first decision when you create a decision matrix is the number of rows it should have. Each row is eight bytes. So do as many as you have room for. 
 
@@ -8,7 +8,7 @@ The next is to decide actions and action parameters. That is what can be done wh
 
 Events that trigger an action is set in class and type filter and masks. This construction allow several events to trigger one decision matrix row. The easiest case is one event. Set the event in the filter part and set the mask to all bit cares that is all ones.
 
-You can also check for origin of event and zone/subzone if you want. You have it all described fully [here](https://grodansparadis.gitbooks.io/the-vscp-specification/vscp_decision_matrix.html#the-model).
+You can also check for origin of event and zone/subzone if you want. You have it all described fully [here](http://docs.vscp.org/spec/latest/#/./vscp_decision_matrix).
 
 VSCP events can contain a lot of different kinds of data. Why are there no options to trigger on them all? Well you have to stop somewhere and we decided on origin, zone and subzone. If you want more compares add actions and corresponding registers that check for them. If for example you want an action that check for the index byte of an event or the sensor index of a measurement set apart a register for that index and make an action that compare the index register you created with the incoming event before the action is carried out. There is no limits on what you can do in this.
 
@@ -111,4 +111,4 @@ void doDM(void)
 ```
 
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')

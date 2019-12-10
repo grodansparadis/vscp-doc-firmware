@@ -3,7 +3,7 @@
 
 The VSCP firmware is code that you find in nodes. It is built to be able to fit in the smallest possible device and it is free of assumptions on which transport mechanism that is used.
 
-Anyway it is not a big deal to make a node that follow the the VSCP standard. You should however be aware of what [registers](https://grodansparadis.gitbooks.io/the-vscp-specification?id=register_abstraction_model) are, what [events](https://grodansparadis.gitbooks.io/the-vscp-specification?id=level_i_events) are, what a [MDF](https://grodansparadis.gitbooks.io/the-vscp-specification?id=module_description_file) is, what a [decision matrix (DM)](https://grodansparadis.gitbooks.io/the-vscp-specification?id=decision_matrix) is and what a [GUID](https://grodansparadis.gitbooks.io/the-vscp-specification?id=globally_unique_identifiers) is before you start. You find all that information in the [VSCP Specification](https://grodansparadis.gitbooks.io/the-vscp-specification).
+Anyway it is not a big deal to make a node that follow the the VSCP standard. You should however be aware of what [registers](http://docs.vscp.org/spec/latest/#/./vscp_register_abstraction_model) are, what [events](http://docs.vscp.org/spec/latest/#/./level_i_events) are, what a [MDF](http://docs.vscp.org/spec/latest/#/./vscp_module_description_file) is, what a [decision matrix (DM)](http://docs.vscp.org/spec/latest/#/./vscp_decision_matrix) is and what a [GUID](http://docs.vscp.org/spec/latest/#/./vscp_globally_unique_identifiers) is before you start. You find all that information in the [VSCP Specification](http://docs.vscp.org/spec/latest).
 
 If you are making modules for sale or delivery outside your own lab bench you should probably ask for a GUID series for your device. Send a mail to [guid-request@vscp.org](mailto:guid-request@vscp.org) providing your contact information and ask for a series. You get a series free of charge.
 
@@ -19,7 +19,7 @@ This is a model that works much the same as for Level I firmware. The firmware r
 
 ## VCSP Link interface based nodes (TCP/IP)
 
-The VSCP Link interface is a telnet interface which is a subset of the [VSCP daemon tcp/ip interface](https://grodansparadis.gitbooks.io/the-vscp-daemon/tcp_ip_protocol_description.html#noop). It always handles the following commands
+The VSCP Link interface is a telnet interface which is a subset of the [VSCP daemon tcp/ip interface](http://docs.vscp.org/vscpd/latest/#/tcp_ip_control_interface). It always handles the following commands
 
  | Command            | Description                                              | 
  | -------            | -----------                                              | 
@@ -96,7 +96,7 @@ Can be used to read and write decision matrix rows.
 #### Subcommands
 
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')
 
 
 

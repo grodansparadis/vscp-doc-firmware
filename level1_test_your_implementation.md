@@ -11,4 +11,4 @@ When you have coded your system you probably want to make sure that it works pro
  7.  Test your devices functionality.
 
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')

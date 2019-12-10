@@ -2,4 +2,4 @@
 
 TBD
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')

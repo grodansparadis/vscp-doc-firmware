@@ -6,4 +6,4 @@ It is important to note here that nothing in the framework code suggest CAN. Man
 
 **REMEMBER THAT!** and let your mind free.
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')

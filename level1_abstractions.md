@@ -1,6 +1,6 @@
 # Abstractions
 
-Abstractions are described [here](https://grodansparadis.gitbooks.io/the-vscp-specification/vscp_module_description_file.html#).
+Abstractions are described [here](http://docs.vscp.org/spec/latest/#/./vscp_module_description_file).
 
 As we saw when the registers where set a 16-bit register needs two consecutive registers to be stored in register space. This is workable for a machine to handle but humans should not have to cope with things like that. The solution to this problem is **abstractions**
 
@@ -46,4 +46,4 @@ The abstractions for our two temperature values will look like this
 After this has been done an end user accessing your device will instead of a high and a low 8-bit value for the temperature see and work with a signed 16-bit integers. In VSCP Works you can see and handle the abstractions in the abstraction tab of the configuration window. In a setup wizard you can handle settings even easier than that.
 
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')

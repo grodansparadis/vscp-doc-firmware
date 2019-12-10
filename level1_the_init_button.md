@@ -34,4 +34,4 @@ What is happening here is that the nickname of the node is set to the free nickn
 The check for not being in the VSCP_STATE_INIT state prevent this from happening again an again and again if a user holds the button down.
 
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')

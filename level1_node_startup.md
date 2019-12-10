@@ -25,4 +25,4 @@ After this the **vscp_init** method is called which is the main VSCP initializat
 Note that there can be other causes to restore default values. Some want to check a checksum over persistent storage and so on. But this is typically what is needed as a minimum.
 
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')

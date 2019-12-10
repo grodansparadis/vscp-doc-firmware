@@ -43,5 +43,5 @@ So before you start your project
 *  Add vscp_firmware/common to your include path.
 
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')
 

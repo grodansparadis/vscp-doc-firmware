@@ -13,6 +13,6 @@
   * [San Franscisco Barometer module](https://www.grodansparadis.com/sanfransisco/sanfransisco.html)
 
 ## Level II
-  * [Dumb node connecting to VSCP daemon](https://grodansparadis.com/wordpress/?p=3102) WiFi PID detecto
+  * [Dumb node connecting to VSCP daemon](https://grodansparadis.com/wordpress/?p=3102) WiFi PID detector.
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')

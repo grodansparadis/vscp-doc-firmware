@@ -97,28 +97,28 @@ If you look at the code for the Paris reference node you will see that the metho
 
 When a possible incoming event is fetched we have a case that goes through the VSCP states. 
 
-#  VSCP_STATE_STARTUP
+####  VSCP_STATE_STARTUP
 
 This is the state we are in after a cold or a warm reset. From here we go to the **VSCP_STATE_INIT** if a nickname has not been assigned to this node or to the **VSCP_STATE_ACTIVE** if a nickname is assigned. 
 
 This means that a node that is started for the first time will go to nickname discovery while a node that has been started before and which has got a nickname will go into the actice state ready to do it's work.
 
-# VSCP_STATE_INIT
+#### VSCP_STATE_INIT
 
 In the init. state we do one thing. Call the **vscp_handleProbeState** which is the handler for the nickname discover process. This method will take us out of this state either when a nickname is found or not.
 
-# VSCP_STATE_PREACTIVE
+#### VSCP_STATE_PREACTIVE
 
 In this state we do one thing, call the method **vscp_goActiveState** which report to the work that we are here and have found a free nickname id by sending the event **CLASS1.EVENT, Type=2, New node on line** which is the same as the probe send to look for a free nickaname execpt that the origin is the discovered free nickname and not 0xff.
 
-# VSCP_STATE_ERROR
+#### VSCP_STATE_ERROR
 
 You should not get to this state but if you do everything is bad. 
 
-# VSCP_STATE_ACTIVE
+#### VSCP_STATE_ACTIVE
 
 In the active state two things needs to be done. First if a protocol event is received it must be feed to the vscp firmware code and this is what is done in the method **vscp_handleProtocolEvent** then if the node have a decision matrix is the event should be feed through it to search for a possible match. This is done in the method **doDM** which is not part of the vscp firmware code. 
 
 That's it, oh well almost. 
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')

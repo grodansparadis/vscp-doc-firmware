@@ -1,45 +1,6 @@
 # Callbacks
 
-<!-- TOC -->
-
-- [Callbacks](#callbacks)
-    - [getVSCPFrame](#getvscpframe)
-    - [sendVSCPFrame=====](#sendvscpframe)
-    - [vscp_getMajorVersion](#vscpgetmajorversion)
-    - [vscp_getMinorVersion](#vscpgetminorversion)
-    - [vscp_getSubMinorVersion](#vscpgetsubminorversion)
-    - [vscp_getGUID](#vscpgetguid)
-    - [vscp_setGUID](#vscpsetguid)
-    - [vscp_getUserID](#vscpgetuserid)
-    - [vscp_setUserID](#vscpsetuserid)
-    - [vscp_getManufacturerId](#vscpgetmanufacturerid)
-    - [vscp_setManufacturerId](#vscpsetmanufacturerid)
-    - [vscp_getBootLoaderAlgorithm](#vscpgetbootloaderalgorithm)
-    - [getRegisterPagesUsed](#getregisterpagesused)
-    - [vscp_getMDF_URL](#vscpgetmdfurl)
-    - [vscp_readNicknamePermanent](#vscpreadnicknamepermanent)
-    - [vscp_writeNicknamePermanent](#vscpwritenicknamepermanent)
-    - [vscp_init_pstorage](#vscpinitpstorage)
-    - [vscp_getControlByte](#vscpgetcontrolbyte)
-    - [vscp_setControlByte](#vscpsetcontrolbyte)
-    - [vscp_getPageSelect](#vscpgetpageselect)
-    - [vscp_setPageSelect](#vscpsetpageselect)
-    - [vscp_readAppReg](#vscpreadappreg)
-    - [vscp_writeAppReg](#vscpwriteappreg)
-    - [vscp_getMatrixInfo](#vscpgetmatrixinfo)
-    - [vscp_getEmbeddedMdfInfo](#vscpgetembeddedmdfinfo)
-    - [vscp_goBootloaderMode](#vscpgobootloadermode)
-    - [vscp_getZone](#vscpgetzone)
-    - [vscp_getSubzone](#vscpgetsubzone)
-    - [vscp_getFamilyCode](#vscpgetfamilycode)
-    - [vscp_getFamilyType](#vscpgetfamilytype)
-    - [vscp_restoreDefaults](#vscprestoredefaults)
-    - [vscp_hardreset](#vscphardreset)
-    - [vscp_wait_ms](#vscpwaitms)
-    - [vscp_wait_s](#vscpwaits)
-
-<!-- /TOC -->
-
+Not technically callbacks but rather function that must be implemented by the application builer.
 
 The real functionality of the framework is set by how you handle the callbacks. Here we will go through each of them in turn. You find them all defined in [vscp_firmware.h](https://github.com/grodansparadis/vscp_firmware/blob/master/common/vscp_firmware.h)
 
@@ -72,7 +33,7 @@ The VSCP firmware code request a new event with this callback. If one is availab
 
 In the Paris reference code the implementation of this callback read a CAN message and translate it to a VSCP event. Buffering is done in hardware. If you need bigger buffers for some reason this is the place to implement them preferably having interrupts to fill them.
 
-## sendVSCPFrame===== 
+## sendVSCPFrame
 
 ```cpp
 int8_t sendVSCPFrame(uint16_t vscpclass,
@@ -452,4 +413,4 @@ Should be implemented only if **DROP_NICKNAME_EXTENDED_FEATURES** is defined.
 
 Wait in a loop for sec seconds.
 
-{% include "./bottom_copyright.md" %}
+[filename](./bottom_copyright.md ':include')
