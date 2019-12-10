@@ -26,5 +26,5 @@
 ----
 
 * Other documentation
- * [http://docs.vscp.org](http://docs.vscp.org)
+ * [VSCP project documentation](http://docs.vscp.org)
 
