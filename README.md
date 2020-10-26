@@ -20,9 +20,6 @@ Apart from going through this document You can read all about and download VSCP 
 If you use VSCP please consider contributing resources or time to the project ([https://vscp.org/support.php](https://vscp.org/support.php)). 
 
 
-
-
- 
 [filename](./bottom_copyright.md ':include')
 
 
