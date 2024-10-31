@@ -1,6 +1,6 @@
 # Introduction
 
-First of all you need the firmware code. You find it [here on github](https://github.com/grodansparadis/vscp_firmware) together with a lot of samples. Samples are organized in there respective architecture with a common folder at each level that contains common code for that level. 
+First of all you need the firmware code. You find it [here on github](https://github.com/grodansparadis/vscp_firmware) together with a lot of samples. The common folder holds the firmware code. On set of files for each level (1/2) of the VSCP protocol (files for level II can actually be used to build lebvel I firmware to). Samples are organized in there respective architecture with a common folder at each level that contains common code for that level. Also search for "vscp-demo" [here](https://github.com/grodansparadis?tab=repositories) for working samples on different platforms.
 
 Two projects of [Grodans Paradis AB](https://grodansparadis.com) is maintained as reference projects that is always will be open and kept up to date with the standard. Both are CAN oriented and written for the Microchip PIC processor but are general in there implementation so they can be used as starting points also for wireless or other implementations of a VSCP node.
 
