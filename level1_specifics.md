@@ -50,9 +50,11 @@ If you don't have the resources to handel Level II events in your hardware go fo
 
 ## Firmware
 
-Firmware for Level I nodes is available in the [vscp-firmware repository](https://github.com/grodansparadis/vscp-firmware). **vscp_firmware.h** and **vscp_firmware.c** in the top common folder is the file you are looking for.Read the rest of this sections oon how to implement this code into your hardware device.  
+Firmware for Level I nodes is available in the [vscp-firmware repository](https://github.com/grodansparadis/vscp-firmware). **vscp_firmware.h** and **vscp_firmware.c** in the top common folder is the file you are looking for.Read the rest of this sections on how to implement this code into your hardware device.
 
-As an alternative to the code described here you can use the [vscp-framework](https://github.com/BlueAndi/vscp-framework) to implement a Level I device. 
+An alternative is to use vscp-firmware-level2.h/vscp-firmware-level2.c which can be used to build both level I and level II firmware.
+
+As an alternative to the code described here you can use the [vscp-framework](https://github.com/BlueAndi/vscp-framework) to implement a Level I device. Also [vscp-arduino](https://github.com/BlueAndi/vscp-arduino) can be useful.
 
 
 [filename](./bottom_copyright.md ':include')

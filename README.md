@@ -7,7 +7,7 @@ Document created: *${/var/creation-time}*
   
 This document is the official VSCP (Very Simple Control Protocol) firmware specification. 
 
-Author 2000-2020 Åke Hedman, [Grodans Paradis AB](https://www.grodansparadis.com), [akhe@grodansparadis.com](akhe@grodansparadis.com)  
+Author 2000-2024 Åke Hedman, [Grodans Paradis AB](https://www.grodansparadis.com), [akhe@grodansparadis.com](akhe@grodansparadis.com)  
 
 This document is licensed under [Creative Commons BY 4.0](https://creativecommons.org/licenses/by/4.0/) and can be freely copied, redistributed, remixed, transformed, built upon as long as you give credits to the author.
 
