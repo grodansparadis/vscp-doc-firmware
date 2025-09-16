@@ -25,9 +25,9 @@
     * [Test your implementation](level1_test_your_implementation.md)
     * [Real world examples](level1_example_devices.md)
 
-  * Level II nodes
-    * [Start](level2_start.md)
-    * [Introduction](level2_introduction.md)
+* Level II nodes (new API)
+  * [Start](level2_start.md)
+  * [Introduction](level2_introduction.md)
 
 ----
 

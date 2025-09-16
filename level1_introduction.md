@@ -12,13 +12,13 @@ The firmware files are release under the [MIT license](https://opensource.org/li
 
 The first reference node is [https://grodansparadis.com/paris/paris.htmlParis](https://grodansparadis.com/paris/paris.htmlParis) which is a relay control node. Follow [the link](https://grodansparadis.com/paris/paris.html) to get information about it. The code for the node is [here at Github](https://github.com/grodansparadis/can4vscp_paris).
 
-The second reference node is [https://www.grodansparadis.com/kelvinntc10k/kelvin_ntc10ka.htmlKelvin NTC](https://www.grodansparadis.com/kelvinntc10k/kelvin_ntc10ka.htmlKelvin NTC) which is a temperature sensor node. Follow [the link](https://www.grodansparadis.com/kelvinntc10k/kelvin_ntc10ka.html) to get information about it. The code for the node is [here at Github](https://github.com/grodansparadis/can4vscp_kelvin_ntc10k).
+The second reference node is [https://www.grodansparadis.com/kelvinntc10k/kelvin_ntc10ka.html](https://www.grodansparadis.com/kelvinntc10k/kelvin_ntc10ka.html) which is a temperature sensor node. Follow [the link](https://www.grodansparadis.com/kelvinntc10k/kelvin_ntc10ka.html) to get information about it. The code for the node is [here at Github](https://github.com/grodansparadis/can4vscp_kelvin_ntc10k).
 
 You find other code for AVR/ARM etc in the firmware folder. Some old and some new.
 
 ## The code
 
-The common VSCP node firmware code is [vscp_firmware.c](https://github.com/grodansparadis/vscp_firmware/blob/master/common/vscp_firmware.c) and [vscp_firmware.h](https://github.com/grodansparadis/vscp_firmware/blob/master/common/vscp_firmware.h). Together they implement the full functionality of a Level I VSCP node. 
+The common VSCP node firmware code is [vscp_firmware.c](https://github.com/grodansparadis/vscp_firmware/blob/master/common/vscp-firmware.c) and [vscp_firmware.h](https://github.com/grodansparadis/vscp-firmware/blob/master/common/vscp-firmware.h). Together they implement the full functionality of a Level I VSCP node. 
 
 If you look in vscp_firmware.c  which include files that are needed 
 
@@ -26,14 +26,14 @@ If you look in vscp_firmware.c  which include files that are needed
 #include `<string.h>`
 
 #include `<stdlib.h>`
-#include "vscp_class.h"
+#include "vscp-class.h"
 
-#include "vscp_type.h"
+#include "vscp-type.h"
 #include "vscp_firmware.h"
 
 ```
 
-you see the references to [vscp_class.h](https://github.com/grodansparadis/vscp_software/blob/master/src/vscp/common/vscp_class.h) and [vscp_type.h](https://github.com/grodansparadis/vscp_software/blob/master/src/vscp/common/vscp_type.h). Both of these files come from the [VSCP main project](https://github.com/grodansparadis/vscp_software) but they are duplicated in the vscp_firmware/common folder. 
+you see the references to [vscp-class.h](https://github.com/grodansparadis/vscp_software/blob/master/src/vscp/common/vscp-class.h) and [vscp-type.h](https://github.com/grodansparadis/vscp_software/blob/master/src/vscp/common/vscp-type.h). Both of these files come from the [VSCP main project](https://github.com/grodansparadis/vscp_software) but they are duplicated in the vscp_firmware/common folder. 
 
 So before you start your project
 

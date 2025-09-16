@@ -13,7 +13,7 @@ This document is licensed under [Creative Commons BY 4.0](https://creativecommon
 
 VSCP is an IoT framework mainly built for resource limited devices. This document describes firmware code support that is freely available for developers making VSCP compatible hardware.
 
-Apart from going through this document You can read all about and download VSCP from [the VSCP site](https://www.vscp.org "The VSCP site"). 
+Apart from going through this document You can read all about and download VSCP from [the VSCP site](https://www.vscp.org). 
 
 **VSCP is free.** Free to use. Free to change. Free to do whatever you want to do with it. VSCP is not owned by anyone. VSCP will stay free and gratis forever.
 
