@@ -17,7 +17,7 @@ Apart from going through this document You can read all about and download VSCP 
 
 **VSCP is free.** Free to use. Free to change. Free to do whatever you want to do with it. VSCP is not owned by anyone. VSCP will stay free and gratis forever.
 
-If you use VSCP please consider contributing resources or time to the project ([https://vscp.org/support.php](https://vscp.org/support.php)). 
+If you use VSCP please consider contributing resources or time to the project ([https://github.com/sponsors/grodansparadis](https://github.com/sponsors/grodansparadis)). 
 
 
 [filename](./bottom_copyright.md ':include')

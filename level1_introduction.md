@@ -10,9 +10,9 @@ The firmware files are release under the [MIT license](https://opensource.org/li
 
 ## Reference code
 
-The first reference node is [https://grodansparadis.com/paris/paris.htmlParis](https://grodansparadis.com/paris/paris.htmlParis) which is a relay control node. Follow [the link](https://grodansparadis.com/paris/paris.html) to get information about it. The code for the node is [here at Github](https://github.com/grodansparadis/can4vscp_paris).
+The first reference node is [https://grodansparadis.github.io/can4vscp_paris/#/](https://grodansparadis.github.io/can4vscp_paris/#/) which is a relay control node. Follow [the link](https://grodansparadis.github.io/can4vscp_paris/#/) to get information about it. The code for the node is [here at Github](https://github.com/grodansparadis/can4vscp_paris?tab=readme-ov-file).
 
-The second reference node is [https://www.grodansparadis.com/kelvinntc10k/kelvin_ntc10ka.html](https://www.grodansparadis.com/kelvinntc10k/kelvin_ntc10ka.html) which is a temperature sensor node. Follow [the link](https://www.grodansparadis.com/kelvinntc10k/kelvin_ntc10ka.html) to get information about it. The code for the node is [here at Github](https://github.com/grodansparadis/can4vscp_kelvin_ntc10k).
+The second reference node is [https://grodansparadis.github.io/can4vscp_kelvin_ntc10k/#/](https://grodansparadis.github.io/can4vscp_kelvin_ntc10k/#/) which is a temperature sensor node. Follow [the link](https://grodansparadis.github.io/can4vscp_kelvin_ntc10k/#/) to get information about it. The code for the node is [here at Github](https://github.com/grodansparadis/can4vscp_kelvin_ntc10k).
 
 You find other code for AVR/ARM etc in the firmware folder. Some old and some new.
 
