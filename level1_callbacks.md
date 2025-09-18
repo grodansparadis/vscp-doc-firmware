@@ -1,6 +1,6 @@
 # Callbacks
 
-Not technically callbacks but rather function that must be implemented by the application builer.
+Not technically callbacks but rather function that must be implemented by the application builder.
 
 The real functionality of the framework is set by how you handle the callbacks. Here we will go through each of them in turn. You find them all defined in [vscp_firmware.h](https://github.com/grodansparadis/vscp_firmware/blob/master/common/vscp_firmware.h)
 
