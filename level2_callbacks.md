@@ -112,24 +112,7 @@ Write value of one of the user registers. Valid register range is 0x00000000 - 0
 * **VSCP_ERROR_INDEX_OOB** should be returned when trying to read a register that does not exist. This error is actually a warning.
 
 
-### vscp_frmw2_callback_send_event
 
-```cpp
-int
-vscp_frmw2_callback_send_event(void* const puserdata, vscpEvent* pev);
-``` 
-#### Parameters
-*  **puserdata** Pointer to user data (typical points to context).
-*  **pev** Pointer to Event to send.
-  
-### Return value
-*  **VSCP_ERROR_SUCCESS** on success, or error code.
-  
-Send event to transport sublayer. 
-
-ev is taken over in the callback and it is responsible for releasing it.
-
-if GUID is all zero then the GUID is set to the GUID of the node.
 
 ### vscp_frmw2_callback_send_event_ex
 

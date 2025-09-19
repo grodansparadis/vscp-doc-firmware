@@ -1,6 +1,10 @@
 # Introduction
 
-First of all you need the firmware code. You find it [here on github](https://github.com/grodansparadis/vscp_firmware) together with a lot of samples. The common folder holds the firmware code. On set of files for each level (1/2) of the VSCP protocol (files for level II can actually be used to build lebvel I firmware to). Samples are organized in there respective architecture with a common folder at each level that contains common code for that level. Also search for "vscp-demo" [here](https://github.com/grodansparadis?tab=repositories) for working samples on different platforms.
+Level I of the VSCP standard is made to be used in small and simple devices. A typical device is based on an 8-bit microcontroller with limited memory and processing power. The protocol is designed to be simple to implement and to use as little resources as possible. If you have hardware with more resources - like a 32-bit microcontroller - you can of course use level I but you can also consider using level II of the VSCP standard. See [here](./level2_introduction.md) for more information about level II. Level I is a subset of level II so if you implement level II you also implement level I.
+
+
+
+To get started, first of all you need the firmware code. You find it [here on github](https://github.com/grodansparadis/vscp_firmware) together with a lot of samples. The common folder holds the firmware code. On set of files for each level (1/2) of the VSCP protocol (files for level II can actually be used to build lebvel I firmware to). Samples are organized in there respective architecture with a common folder at each level that contains common code for that level. Also search for "vscp-demo" [here](https://github.com/grodansparadis?tab=repositories) for working samples on different platforms.
 
 Two projects of [Grodans Paradis AB](https://grodansparadis.com) is maintained as reference projects that is always will be open and kept up to date with the standard. Both are CAN oriented and written for the Microchip PIC processor but are general in there implementation so they can be used as starting points also for wireless or other implementations of a VSCP node.
 
