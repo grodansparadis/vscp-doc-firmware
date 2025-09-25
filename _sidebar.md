@@ -1,7 +1,7 @@
 * Introduction
   * [About this document](README.md)
   * [VSCP - what is it?](what_is_vscp.md)
-  * [VSCP firmware](vscp_firmware.md)
+  * [VSCP firmware](vscp-firmware.md)
   * [VSCP levels](vscp_levels.md)
 
 * Build a VSCP device

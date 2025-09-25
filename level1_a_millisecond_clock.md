@@ -1,6 +1,6 @@
 # A millisecond clock
 
-The VSCP firmware code rely on a millisecond clock. Therefore your first task is to add this to your code and make sure that it works. In the Paris reference design you find this code in the [interrupt routine around line 133](https://github.com/grodansparadis/can4vscp_paris/blob/master/main.c). It looks like this 
+The VSCP firmware code rely on a millisecond clock. Therefore your first task is to add this to your code and make sure that it works. In the Paris reference design you find this code in the [interrupt routine around line 133](https://github.com/grodansparadis/can4vscp-paris/blob/master/main.c). It looks like this 
 
 ``` cpp
 // Clock

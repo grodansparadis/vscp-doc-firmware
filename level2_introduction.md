@@ -6,7 +6,7 @@ The main difference between the two levels is the size of the data part of VSCP 
 
 Actually most systems today are able to handle level II events so if you are in doubt, use level II.
 
-To implement level II support in your device, you can start by looking at the firmware code [here on github](https://github.com/grodansparadis/vscp_firmware). 
+To implement level II support in your device, you can start by looking at the firmware code [here on github](https://github.com/grodansparadis/vscp-firmware). 
 
 
 

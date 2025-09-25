@@ -50,7 +50,7 @@ If you don't have the resources to handel Level II events in your hardware go fo
 
 ## Firmware
 
-Firmware for Level I nodes is available in the [vscp-firmware repository](https://github.com/grodansparadis/vscp-firmware). **vscp_firmware.h** and **vscp_firmware.c** in the top common folder is the file you are looking for.Read the rest of this sections on how to implement this code into your hardware device.
+Firmware for Level I nodes is available in the [vscp-firmware repository](https://github.com/grodansparadis/vscp-firmware). **vscp-firmware.h** and **vscp-firmware.c** in the top common folder is the file you are looking for.Read the rest of this sections on how to implement this code into your hardware device.
 
 An alternative is to use vscp-firmware-level2.h/vscp-firmware-level2.c which can be used to build both level I and level II firmware.
 

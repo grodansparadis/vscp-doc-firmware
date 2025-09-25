@@ -4,7 +4,7 @@ To build a VSCP Level II device you typically need a more capable microcontrolle
 
 You can also use a small embedded computer like a Raspberry Pi or an ESP32. These devices have more processing power and memory than a typical microcontroller and are easy to program using free tools.
 
-To get started you can download the VSCP Level II reference implementation from [github](https://github.com/grodansparadis/vscp_firmware). This code is written for a 32-bit ARM Cortex-M series microcontroller but can be ported to other microcontrollers with some effort. The code is written in C and is easy to understand. It is also well documented so you can learn a lot by reading the code. The code is released under the MIT license so you can use it in your own projects without any restrictions.
+To get started you can download the VSCP Level II reference implementation from [github](https://github.com/grodansparadis/vscp-firmware). This code is written for a 32-bit ARM Cortex-M series microcontroller but can be ported to other microcontrollers with some effort. The code is written in C and is easy to understand. It is also well documented so you can learn a lot by reading the code. The code is released under the MIT license so you can use it in your own projects without any restrictions.
 
 ## Step 1
 First add the file [vscp-firmware-level2.h](https://github.com/grodansparadis/vscp-firmware/blob/master/common/vscp-firmware-level2.h) and [vscp-firmware-level2.c](https://github.com/grodansparadis/vscp-firmware/blob/master/common/vscp-firmware-level2.c) from the vscp-firmware repository to your project.

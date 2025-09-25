@@ -2,7 +2,7 @@
 
 Not technically callbacks but rather function that must be implemented by the application builder.
 
-The real functionality of the framework is set by how you handle the callbacks. Here we will go through each of them in turn. You find them all defined in [vscp_firmware.h](https://github.com/grodansparadis/vscp_firmware/blob/master/common/vscp_firmware.h)
+The real functionality of the framework is set by how you handle the callbacks. Here we will go through each of them in turn. You find them all defined in [vscp-firmware.h](https://github.com/grodansparadis/vscp-firmware/blob/master/common/vscp-firmware.h)
 
 Just implement dummys for them to start with if you like.  The one you probably want to implement from start is read/write event and register read/write.
 ##  getVSCPFrame
@@ -113,7 +113,7 @@ If you are making modules for sale or delivery outside your own lab bench you sh
 void vscp_setGUID(uint8_t idx, uint8_t data);
 ```
 
-The [GUID](hhttps://grodansparadis.github.io/vscp-doc-spec/#/./vscp_globally_unique_identifiers) of a node is an important part of the nodes identity. If a nickname is just that, a short name, the GUID is the real identity of the node. **IT MUST BE UNIQUE!!!** 
+The [GUID](https://grodansparadis.github.io/vscp-doc-spec/#/./vscp_globally_unique_identifiers) of a node is an important part of the nodes identity. If a nickname is just that, a short name, the GUID is the real identity of the node. **IT MUST BE UNIQUE!!!** 
 
 This callback is only needed if **ENABLE_WRITE_2PROTECTED_LOCATIONS** is defined. If defined this callback is required and it will write the GUID bytes to there respective positions.
 
@@ -208,7 +208,7 @@ The [MDF (Module Description File)](https://grodansparadis.github.io/vscp-doc-sp
 
 With this callback the bytes (0-31) of the MDF is read. 
 
-You can see [here](https://github.com/grodansparadis/can4vscp_kelvin_ntc10k/tree/master/mdf) and [here](https://github.com/grodansparadis/can4vscp_paris/tree/master/mdf) how a real world MDF looks like.
+You can see [here](https://github.com/grodansparadis/can4vscp-kelvin_ntc10k/tree/master/mdf) and [here](https://github.com/grodansparadis/can4vscp-paris/tree/master/mdf) how a real world MDF looks like.
 
 Typically it is defined in the code as this
 
